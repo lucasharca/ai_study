@@ -122,6 +122,26 @@ Discover hidden themes and topics in large document collections.
 
 ---
 
+### 7. **Fake News Detection** (`fake_news/`)
+Comprehensive analysis and classification of fake news using multiple NLP techniques.
+
+#### Techniques Applied:
+- **Data Exploration** - Analyze distribution of fake vs factual news
+- **POS Tagging Comparison** - Compare grammatical structures between fake and factual content
+- **Named Entity Recognition** - Extract and analyze entities in news articles
+- **Text Preprocessing Pipeline** - Clean and prepare text data
+- **N-grams Analysis** - Identify common word patterns
+- **Sentiment Analysis** - Compare emotional tone using VADER
+- **Topic Modeling** - Discover themes in fake news using LDA and LSA
+- **Classification Models** - Build Logistic Regression and SVM classifiers to detect fake news
+
+#### Practical Example (`practical_exemple.py`)
+- **End-to-End Fake News Analysis** - Demonstrates complete NLP workflow from preprocessing to classification
+- Integrates multiple techniques learned throughout the course
+- Achieves high accuracy in fake news detection
+
+---
+
 ## 🛠️ Dependencies
 
 All required packages are listed in `requirements.txt`:
@@ -153,6 +173,7 @@ pip install -r requirements.txt
 4. **Analyze sentiment** → Sentiment Analysis with both approaches
 5. **Extract information** → Text Tagging (NER & POS)
 6. **Discover patterns** → Topic Modeling
+7. **Detect misinformation** → Fake News Detection
 
 Each module includes working examples that can be executed independently or as part of the workflow.
 
@@ -165,17 +186,18 @@ Each module includes working examples that can be executed independently or as p
 - **Supervised vs Unsupervised Learning:** Classification vs topic modeling approaches
 - **Rule-based vs ML Approaches:** Traditional methods vs deep learning (sentiment analysis)
 - **Trade-offs:** Stemming vs lemmatization, BoW vs TF-IDF, speed vs accuracy
-- **Real-world Applications:** Practical examples with actual datasets (hotels, reviews, news)
+- **Real-world Applications:** Practical examples with actual datasets (hotels, reviews, news, fake news detection)
 
 ---
 
 ## 📊 Practical Tasks
 
-This project includes three comprehensive practical exercises:
+This project includes four comprehensive practical exercises:
 
 1. **Text Processing Task** - Clean and prepare TripAdvisor reviews for analysis
 2. **Sentiment Analysis Task** - Compare VADER and transformer approaches on book reviews
 3. **Text Tagging Task** - Extract entities and analyze grammatical structure of news headlines
+4. **Fake News Detection Task** - Complete analysis pipeline applying all learned techniques to classify fake vs factual news
 
 Each practical task demonstrates how to apply multiple techniques to solve real-world NLP problems.
 
@@ -191,6 +213,9 @@ python text_processing/tokenization.py
 
 # Classification example
 python text_classifier/logistic_regression.py
+
+# Fake news detection example
+python fake_news/practical_exemple.py
 
 # Practical tasks
 python sentiment_analysis/practical_task/index.py
